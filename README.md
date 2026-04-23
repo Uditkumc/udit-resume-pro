@@ -103,7 +103,7 @@ Frontend (React) → Backend (Express API) → MongoDB  (Atlas)
 - 💻 GitHub:https://github.com/Uditkumc
 
 ---
-⭐ Turn your resume into opportunities — star CareerForge Pro to support!
+⭐ Turn your resume into opportunities — udit-resume-pro to support!
 
 
 
