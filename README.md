@@ -99,8 +99,8 @@ Frontend (React) → Backend (Express API) → MongoDB  (Atlas)
 **Shri Priyaa**
 
 - 💼 Aspiring Full Stack Developer (MERN)
-- 🔗 LinkedIn: https://linkedin.com/in/shri-priyaa-s-137277320
-- 💻 GitHub: https://github.com/shri-2205
+- 🔗 LinkedIn: https://linkedin.com/in/udit-kumar-01b3b5288
+- 💻 GitHub:https://github.com/Uditkumc
 
 ---
 ⭐ Turn your resume into opportunities — star CareerForge Pro to support!
