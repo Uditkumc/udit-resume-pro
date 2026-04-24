@@ -36,29 +36,22 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Hamburger Button - sirf mobile pe dikhega */}
+      {/* Hamburger Button */}
       <button
         onClick={() => setMobileOpen(true)}
-        style={{
-          position: 'fixed', top: 16, left: 16, zIndex: 1100,
-          background: 'var(--surface)', border: '1px solid var(--border)',
-          borderRadius: 10, padding: '8px 12px', cursor: 'pointer',
-          color: 'var(--text)', fontSize: 20,
-          display: 'none', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
-        }}
         className="hamburger-btn"
       >
         <i className="bi bi-list" />
       </button>
 
-      {/* Mobile Overlay */}
+      {/* Dark Overlay */}
       {mobileOpen && (
         <div
           onClick={() => setMobileOpen(false)}
           style={{
-            position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.6)',
-            zIndex: 1099, backdropFilter: 'blur(4px)'
+            position: 'fixed', inset: 0,
+            background: 'rgba(0,0,0,0.7)',
+            zIndex: 1099,
           }}
         />
       )}
@@ -70,12 +63,6 @@ export default function Sidebar() {
         <button
           onClick={() => setMobileOpen(false)}
           className="sidebar-close-btn"
-          style={{
-            position: 'absolute', top: 16, right: 16,
-            background: 'transparent', border: 'none',
-            color: 'var(--text-muted)', fontSize: 22,
-            cursor: 'pointer', display: 'none', zIndex: 10
-          }}
         >✕</button>
 
         {/* Logo */}
@@ -113,7 +100,7 @@ export default function Sidebar() {
             Developer
           </button>
 
-          {/* Developer Full Page Modal */}
+          {/* Developer Modal */}
           {devOpen && (
             <div onClick={() => setDevOpen(false)} style={{
               position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
