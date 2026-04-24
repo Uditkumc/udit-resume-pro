@@ -51,7 +51,7 @@ export default function Sidebar() {
           style={{
             position: 'fixed', inset: 0,
             background: 'rgba(0,0,0,0.7)',
-            zIndex: 9997 ,
+            zIndex: 9997,
           }}
         />
       )}
@@ -94,8 +94,8 @@ export default function Sidebar() {
         {/* Bottom */}
         <div style={{ padding: '10px 8px', borderTop: '1px solid var(--border)' }}>
 
-          {/* Developer Button */}
-          <button onClick={() => setDevOpen(true)} className="nav-item" style={{ marginBottom: 6 }}>
+          {/* 1. Developer Button */}
+          <button onClick={() => setDevOpen(true)} className="nav-item" style={{ marginBottom: 2 }}>
             <i className="bi bi-person-badge-fill" style={{ fontSize: 15 }} />
             Developer
           </button>
@@ -156,12 +156,14 @@ export default function Sidebar() {
             </div>
           )}
 
-          <button onClick={toggleTheme} className="nav-item" style={{ marginBottom: 6 }}>
+          {/* 2. Theme Toggle */}
+          <button onClick={toggleTheme} className="nav-item" style={{ marginBottom: 2 }}>
             <i className={`bi bi-${theme === 'dark' ? 'sun-fill' : 'moon-fill'}`} style={{ fontSize: 15 }} />
             {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
           </button>
 
-          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 14, padding: '10px 12px', marginBottom: 8 }}>
+          {/* 3. User Info Box with Logout Arrow */}
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 14, padding: '10px 12px', marginTop: 6 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <div style={{ width: 34, height: 34, background: 'linear-gradient(135deg, var(--accent), var(--accent-2))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 14, color: '#fff', flexShrink: 0 }}>
                 {user?.name?.charAt(0).toUpperCase()}
@@ -170,7 +172,8 @@ export default function Sidebar() {
                 <p style={{ margin: 0, fontSize: 13, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{user?.name}</p>
                 <p style={{ margin: 0, fontSize: 11, color: 'var(--text-muted)', textTransform: 'capitalize' }}>{user?.plan} plan</p>
               </div>
-              <button onClick={handleLogout} title="Logout" style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--text-muted)', padding: 4, borderRadius: 6, fontSize: 16, display: 'flex', alignItems: 'center', transition: 'color 0.2s' }}
+              <button onClick={handleLogout} title="Logout"
+                style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--text-muted)', padding: 4, borderRadius: 6, fontSize: 16, display: 'flex', alignItems: 'center', transition: 'color 0.2s' }}
                 onMouseEnter={e => e.currentTarget.style.color = '#ef4444'}
                 onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}>
                 <i className="bi bi-box-arrow-right" />
@@ -178,9 +181,6 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <button onClick={handleLogout} className="btn-danger" style={{ width: '100%', padding: '8px 12px', fontSize: 13, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, borderRadius: 10 }}>
-            <i className="bi bi-box-arrow-right" /> Sign Out
-          </button>
         </div>
       </div>
     </>
