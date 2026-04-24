@@ -51,7 +51,7 @@ export default function Sidebar() {
           style={{
             position: 'fixed', inset: 0,
             background: 'rgba(0,0,0,0.7)',
-            zIndex: 1099,
+            zIndex: 9997 ,
           }}
         />
       )}
