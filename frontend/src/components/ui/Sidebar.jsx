@@ -75,7 +75,7 @@ export default function Sidebar() {
         </div>
 
         {/* Nav Sections */}
-        <nav style={{ flex: 1, padding: '10px 8px', overflowY: 'auto' }}>
+        <nav style={{ flex: 'none', padding: '10px 8px', overflowY: 'auto' }}>
           {NAV_SECTIONS.map(({ title, items }) => (
             <div key={title} style={{ marginBottom: 8 }}>
               <p style={{ fontSize: 10, fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: 1.5, padding: '6px 12px 4px', margin: 0 }}>{title}</p>
