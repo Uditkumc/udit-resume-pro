@@ -43,7 +43,7 @@ export default function LoginPage() {
         <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 24, padding: '32px' }}>
           {error && (
             <div style={{ background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 12, padding: '10px 14px', marginBottom: 20, color: '#ef4444', fontSize: 13, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <i className="bi bi-exclamation-circle-fill" />{error?.message}
+              <i className="bi bi-exclamation-circle-fill" />{error}
             </div>
           )}
 
