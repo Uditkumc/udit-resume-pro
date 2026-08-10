@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // Single axios instance — all requests go through here
 const api = axios.create({
-  baseURL: 'https://careerforge-pro-1.onrender.com/api',  //'/api',
+  baseURL:'https://udit-resume-pro.onrender.com/api',  //'/api',
   timeout: 120000,
 })
 
